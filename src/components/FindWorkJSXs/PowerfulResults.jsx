@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "../../CSS/FindWorkCSS/PowerfulResults.css";
+import { Link } from "react-router-dom";
 
 const PowerfulResults = () => {
   return (
@@ -21,12 +22,12 @@ const PowerfulResults = () => {
       </p>
       <p>&nbsp;</p>
       <div className="buttonContainer">
-        <a href="/submit-resume" rel="noopener" className="btn btn-darkblue">
+        <Link to="/submit-resume" rel="noopener" className="btn btn-darkblue">
           Careers at Kforce
-        </a>
-        <a href="/about" rel="noopener" className="btn btn-darkblue">
+        </Link>
+        <Link to="/about" rel="noopener" className="btn btn-darkblue">
           See Our Impact
-        </a>
+        </Link>
       </div>
       <p>&nbsp;</p>
     </div>

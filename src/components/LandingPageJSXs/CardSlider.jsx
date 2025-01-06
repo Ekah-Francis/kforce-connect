@@ -39,7 +39,7 @@ const CardSlider = () => {
           }`}
         >
           <div className="image-section">
-            <img src="/wells.png" alt="Report" className="slider-image" />
+            <img src="wells.png" alt="Report" className="slider-image" />
           </div>
           <div className="content-section">
             <h3>Preparing your organization for generative AI</h3>
@@ -70,7 +70,7 @@ const CardSlider = () => {
           }`}
         >
           <div className="image-section">
-            <img src="/caru2.png" alt="Report" className="slider-image" />
+            <img src="caru2.png" alt="Report" className="slider-image" />
           </div>
           <div className="content-section">
             <h3>
@@ -104,7 +104,7 @@ const CardSlider = () => {
           }`}
         >
           <div className="image-section">
-            <img src="/report.png" alt="Report" className="slider-image" />
+            <img src="report.png" alt="Report" className="slider-image" />
           </div>
           <div className="content-section">
             <h3> Labor & Industry Trends Report October 2024</h3>

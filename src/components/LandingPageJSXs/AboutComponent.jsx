@@ -8,7 +8,7 @@ const AboutComponent = () => {
     <div className="about-container">
       <div className="about-content">
         <img
-          src="/about.jpg" // Replace with your image URL
+          src="about.jpg" // Replace with your image URL
           alt="About Kforce"
           className="about-image"
         />

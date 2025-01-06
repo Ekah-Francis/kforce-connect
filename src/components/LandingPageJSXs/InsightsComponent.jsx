@@ -17,14 +17,14 @@ const InsightsComponent = () => {
         {[
           {
             // href: "https://www.kforce.com/articles/preparing-your-organization-for-generative-ai",
-            img: "/res1.jpg",
+            img: "res1.jpg",
             title: "Preparing your organization for generative AI",
             description:
               "Interest in AI is at an all-time high, but there is more to mastering this technology than simply deploying the latest tools.",
           },
           {
             // href: "https://www.kforce.com/articles/kforce-survey-quality-and-security-dominate-data-and-analytics-concerns",
-            img: "/res2.jpg",
+            img: "res2.jpg",
             title:
               "Kforce survey: Quality and security dominate data and analytics concerns",
             description:
@@ -32,7 +32,7 @@ const InsightsComponent = () => {
           },
           {
             // href: "https://www.kforce.com/articles/labor-and-industry-trends-report-october-2024/",
-            img: "/report.png",
+            img: "report.png",
             title: "Labor and Industry Trends Report October 2024",
             description:
               "Total nonfarm payroll employment was essentially unchanged in October, adding just 12,000 jobs, while the unemployment rate remained unchanged at 4.1%.",

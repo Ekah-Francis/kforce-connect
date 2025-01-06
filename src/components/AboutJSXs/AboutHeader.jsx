@@ -26,10 +26,18 @@ const AboutHeader = () => {
 
       {/* Video Area */}
       <div className="desktopView">
-        <video className="video" autoPlay loop muted playsInline>
-          <source src="/hero.mp4" type="video/mp4" />
+        <video
+          className="video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          src="hero.mp4"
+          type="video/mp4"
+        >
+          {/* <source src="hero.mp4" type="video/mp4" />
           <source src="" type="video/webm" />
-          <source src="" type="video/ogg" />
+          <source src="" type="video/ogg" /> */}
         </video>
       </div>
     </div>
