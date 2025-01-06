@@ -1,7 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/kforce-connect" />
+    <meta http-equiv="refresh" content="0; url=/kforce-connect/" />
+    <script>
+      // If JavaScript is enabled, rewrite to the correct path
+      const redirectTo = location.pathname.replace("/kforce-connect/", "/");
+      if (redirectTo !== "/") {
+        location.href = "/kforce-connect" + redirectTo;
+      }
+    </script>
   </head>
-  <body></body>
+  <body>
+    <p>If you are not redirected, <a href="/kforce-connect/">click here</a>.</p>
+  </body>
 </html>
