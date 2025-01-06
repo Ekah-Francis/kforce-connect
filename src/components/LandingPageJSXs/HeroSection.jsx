@@ -31,7 +31,7 @@ const HeroSection = () => {
           <br />
           <p>
             <a
-              href="/about"
+              href="/kforce-connect/about"
               title="Together Toward Tomorrow"
               className="btn-filled"
             >

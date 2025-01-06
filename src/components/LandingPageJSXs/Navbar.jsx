@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <Link to="/">
           <div className="logo">
-            <img src="/kforce.png" alt="" />
+            <img src="kforce.png" alt="" />
           </div>
         </Link>
 

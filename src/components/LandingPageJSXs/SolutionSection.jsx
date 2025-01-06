@@ -31,7 +31,7 @@ const SolutionSection = () => {
     {
       title: "Team Solutions",
 
-      image1: "/heroshapes_teamsolutions_3.png",
+      image1: "/kforce-connect/heroshapes_teamsolutions_3.png",
       image2: "/heroshapes_teamsolutions_1.png",
       content:
         "Take charge of your most valued initiatives while we provide a dedicated team offering technical expertise and services.",
