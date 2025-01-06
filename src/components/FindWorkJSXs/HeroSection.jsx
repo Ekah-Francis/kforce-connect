@@ -2,6 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import "../../CSS/FindWorkCSS/HeroSection.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -12,23 +13,21 @@ const HeroSection = () => {
           <p>&nbsp;</p>
           <p style={{ textAlign: "center", marginBottom: "6rem" }}>
             <span style={{ fontSize: "14pt" }}>
-              <a
-                rel="noopener"
-                href="/search-jobs"
+              <Link
+                to="/search-jobs"
                 title="Search Jobs"
                 className="btn-filled-white-lochmara"
               >
                 Search Jobs
-              </a>
+              </Link>
               &nbsp; &nbsp;
-              <a
-                rel="noopener"
-                href="/submit-resume"
+              <Link
+                to="/submit-resume"
                 title="Submit Your Resume"
                 className="btn-filled-white-lochmara"
               >
                 Submit Resume
-              </a>
+              </Link>
             </span>
           </p>
         </article>

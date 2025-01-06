@@ -24,15 +24,15 @@ const SolutionSection = () => {
       title: "Talent Solutions",
       content:
         "Save time finding the right resource for your team while we connect you with the best talent in the marketplace.",
-      image1: "/heroshapes_talentsolutions_3.png",
-      image2: "/homepage-project-solutions.png",
+      image1: "heroshapes_talentsolutions_3.png",
+      image2: "homepage-project-solutions.png",
       backgroundColor: "#3190bd",
     },
     {
       title: "Team Solutions",
 
-      image1: "/kforce-connect/heroshapes_teamsolutions_3.png",
-      image2: "/heroshapes_teamsolutions_1.png",
+      image1: "heroshapes_teamsolutions_3.png",
+      image2: "heroshapes_teamsolutions_1.png",
       content:
         "Take charge of your most valued initiatives while we provide a dedicated team offering technical expertise and services.",
 
@@ -104,6 +104,7 @@ const SolutionSection = () => {
                 className="cardSlide text big shaped-left"
                 style={{
                   backgroundColor: solution.backgroundColor,
+
                   position: "absolute",
                   top: "75px",
                   left: "0px",

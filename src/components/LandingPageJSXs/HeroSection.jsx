@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "../../CSS/LandingPageCSS/HeroSection.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -8,7 +9,7 @@ const HeroSection = () => {
       {/* Video Background */}
       <div className="video-background">
         <video autoPlay loop muted playsInline className="video-element">
-          <source src="/kforce-vid.mp4" type="video/mp4" />
+          <source src="kforce-vid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -30,13 +31,13 @@ const HeroSection = () => {
           <br />
           <br />
           <p>
-            <a
-              href="/kforce-connect/about"
+            <Link
+              to="/about"
               title="Together Toward Tomorrow"
               className="btn-filled"
             >
               Explore Trends
-            </a>
+            </Link>
           </p>
         </article>
       </div>

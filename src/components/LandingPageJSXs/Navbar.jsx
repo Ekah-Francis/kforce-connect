@@ -113,7 +113,7 @@ const Navbar = () => {
         </Link>
         <Link to="/">
           <div className="logo">
-            <img src="/kforce.png" alt="" />
+            <img src="kforce.png" alt="" />
           </div>
         </Link>
         <FaBars className="hamburger-menu" onClick={toggleSidebar} />
