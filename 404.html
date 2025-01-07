@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/kforce-connect/" />
+    <meta charset="UTF-8" />
     <script>
-      // If JavaScript is enabled, rewrite to the correct path
-      const redirectTo = location.pathname.replace("/kforce-connect/", "/");
-      if (redirectTo !== "/") {
-        location.href = "/kforce-connect" + redirectTo;
+      // Get the pathname of the current location
+      const path = window.location.pathname;
+      const basePath = "/kforce-connect"; // Your GitHub Pages base path
+
+      // Check if the path starts with the base path
+      if (!path.startsWith(basePath)) {
+        window.location.href = `${basePath}/`; // Redirect to base if incorrect
+      } else {
+        // Rewrite URL to index.html for React Router to handle
+        const newPath = path.replace(basePath, "") || "/";
+        window.history.replaceState(null, null, basePath + newPath);
+        window.location.href = basePath + "/index.html";
       }
     </script>
   </head>
   <body>
-    <p>If you are not redirected, <a href="/kforce-connect/">click here</a>.</p>
+    <p>
+      Redirecting... If this takes too long,
+      <a href="/kforce-connect/">click here</a>.
+    </p>
   </body>
 </html>
