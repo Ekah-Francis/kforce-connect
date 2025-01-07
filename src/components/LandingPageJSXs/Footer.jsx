@@ -12,13 +12,13 @@ const Footer = () => {
       <footer className="footer bg-blue">
         <div className="container">
           <div className="logo-content">
-            <a href="/">
+            <Link to="/">
               <img
                 src="https://kforcewebeast.azureedge.net/media/407208/kforce_sm_white_1000px.png"
                 alt="Kforce logo"
                 className="footer-logo"
               />
-            </a>
+            </Link>
 
             <div>
               <p className="about-text">
@@ -45,89 +45,89 @@ const Footer = () => {
           <div className="link-table">
             <div className="table-column">
               <h3>
-                <a href="/find-work">Find Work</a>
+                <Link to="/find-work">Find Work</Link>
               </h3>
               <ul>
                 <li>
-                  <a href="/search-jobs">Search Jobs</a>
+                  <Link to="/search-jobs">Search Jobs</Link>
                 </li>
                 <li>
-                  <a href="/submit-resume">Submit Your Resume</a>
+                  <Link to="/submit-resume">Submit Your Resume</Link>
                 </li>
                 {/* <li>
-                  <a href="https://www.kforce.com/kforceconnect-referral-app/">
+                  <Link to="https://www.kforce.com/kforceconnect-referral-app/">
                     KFORCEconnect
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/find-work/visa-sponsorship-solutions/">
+                  <Link to="/find-work/visa-sponsorship-solutions/">
                     Visa Sponsorship
-                  </a>
+                  </Link>
                 </li> */}
               </ul>
             </div>
             <div className="table-column">
               <h3>
-                <a href="/solution">Solutions</a>
+                <Link to="/solution">Solutions</Link>
               </h3>
               <ul>
                 <li>
-                  <a href="/talent-solution">Talent Solutions</a>
+                  <Link to="/talent-solution">Talent Solutions</Link>
                 </li>
                 {/* <li>
-                  <a href="/solutions/team-solutions/">Team Solutions</a>
+                  <Link to="/solutions/team-solutions/">Team Solutions</Link>
                 </li>
                 <li>
-                  <a href="/solutions/project-solutions/">Project Solutions</a>
+                  <Link to="/solutions/project-solutions/">Project Solutions</Link>
                 </li>
                 <li>
-                  <a href="/solutions/international-talent-solutions/">
+                  <Link to="/solutions/international-talent-solutions/">
                     International Talent Solutions
-                  </a>
+                  </Link>
                 </li> */}
               </ul>
             </div>
             <div className="table-column">
               <h3>
-                <a href="/about">About</a>
+                <Link to="/about">About</Link>
               </h3>
               <ul>
                 <li>
-                  <a href="/leaders">Executive Leadership</a>
+                  <Link to="/leaders">Executive Leadership</Link>
                 </li>
                 {/* <li>
-                  <a href="/about/sustainability/">Sustainability</a>
+                  <Link to="/about/sustainability/">Sustainability</Link>
                 </li>
                 <li>
-                  <a href="/about/careers/">Careers at Kforce</a>
+                  <Link to="/about/careers/">Careers at Kforce</Link>
                 </li>
                 <li>
-                  <a href="/about/newsroom/">Newsroom</a>
+                  <Link to="/about/newsroom/">Newsroom</Link>
                 </li>
                 <li>
-                  <a href="/about/awards/">Awards</a>
+                  <Link to="/about/awards/">Awards</Link>
                 </li> */}
               </ul>
             </div>
             {/* <div className="table-column">
               <ul className="bigger-link">
                 <li>
-                  <a href="/knowledge-center/">Knowledge Center</a>
+                  <Link to="/knowledge-center/">Knowledge Center</Link>
                 </li>
                 <li>
-                  <a href="/investor-relations/">Investor Relations</a>
+                  <Link to="/investor-relations/">Investor Relations</Link>
                 </li>
                 <li>
-                  <a href="/site-map/">Site Map</a>
+                  <Link to="/site-map/">Site Map</Link>
                 </li>
                 <li>
-                  <a href="/contact-us/">Contact Us</a>
+                  <Link to="/contact-us/">Contact Us</Link>
                 </li>
                 <li>
-                  <a href="/accessibility-center/">Accessibility Center</a>
+                  <Link to="/accessibility-center/">Accessibility Center</Link>
                 </li>
                 <li>
-                  <a href="/fraud-alert/">Do You Suspect Fraud?</a>
+                  <Link to="/fraud-alert/">Do You Suspect Fraud?</Link>
                 </li>
               </ul>
             </div> */}
@@ -145,49 +145,45 @@ const Footer = () => {
           </Link>
         </div>
         <p className="last">
-          <a
-            href="https://kforcewebeast.azureedge.net/media/403128/affirmative-action-statement-of-policy_04-01-2019.pdf"
+          <Link
+            to="https://kforcewebeast.azureedge.net/media/403128/affirmative-action-statement-of-policy_04-01-2019.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
             Kforce Affirmative Action Statement
-          </a>
+          </Link>
           &nbsp;|&nbsp;
-          <a
-            href="https://kforcewebeast.azureedge.net/media/408181/ier-poster-final.pdf"
+          <Link
+            to="https://kforcewebeast.azureedge.net/media/408181/ier-poster-final.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
             Federal IER Poster
-          </a>
+          </Link>
           &nbsp;|&nbsp;
-          <a href="/terms-of-use/" target="_blank" rel="noopener noreferrer">
+          <Link to="/terms-of-use/" target="_blank" rel="noopener noreferrer">
             Terms of Use
-          </a>
+          </Link>
           &nbsp;|&nbsp;
-          <a href="/fraud-alert/" target="_blank" rel="noopener noreferrer">
+          <Link to="/fraud-alert/" target="_blank" rel="noopener noreferrer">
             Fraud Alert
-          </a>
+          </Link>
           &nbsp;|&nbsp;
-          <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">
+          <Link to="/privacy-policy/" target="_blank" rel="noopener noreferrer">
             Privacy Policy
-          </a>
+          </Link>
           &nbsp;|&nbsp;
-          <a
-            href="https://privacyportal.onetrust.com/webform/3d9b6fd8-e40c-4c8e-a4c8-6d5dd13d34ed/cf5d6778-3af7-4def-bfdc-87e17eac2865"
+          <Link
+            to="https://privacyportal.onetrust.com/webform/3d9b6fd8-e40c-4c8e-a4c8-6d5dd13d34ed/cf5d6778-3af7-4def-bfdc-87e17eac2865"
             target="_blank"
             rel="noopener noreferrer"
           >
             Privacy Rights
-          </a>
+          </Link>
           &nbsp;|&nbsp;
-          <a
-            href="https://health.aetna.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link to="https://health.aetna.com/" rel="noopener noreferrer">
             Transparency in Coverage
-          </a>
+          </Link>
         </p>
       </div>
     </>

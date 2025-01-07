@@ -7,25 +7,22 @@ const HeroSection = () => {
   return (
     <div className="hero-section">
       {/* Video Background */}
-      <div className="video-background">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="video-element"
-          src="kforce-vid.mp4"
-          type="video/mp4"
-        >
-          {/* <source src="kforce-vid.mp4" type="video/mp4" /> */}
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="video-element"
+        src="kforce-vid.mp4"
+        type="video/mp4"
+      >
+        Your browser does not support the video tag.
+      </video>
 
       {/* Gradient Overlay */}
       <div className="hero-video-gradient"></div>
 
-      {/* Dark Mask */}
+      {/* Light Blue Mask */}
       <div className="hero-image-mask"></div>
 
       {/* Hero Content */}

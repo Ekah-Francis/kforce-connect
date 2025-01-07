@@ -15,7 +15,7 @@ const SignInComponent = () => {
                   <div className="rich-text">
                     <a rel="noopener noreferrer" href="/login" target="_blank">
                       <img
-                        src="/consultantlogin-02.png"
+                        src="consultantlogin-02.png"
                         alt="Kforce Consultant Login"
                         className="responsive-img"
                       />
@@ -41,7 +41,7 @@ const SignInComponent = () => {
             <div className="row2">
               <div className="col">
                 <img
-                  src="/consultantlogin-04.png"
+                  src="consultantlogin-04.png"
                   alt="Consultant Benefits"
                   className="responsive-img"
                 />
@@ -52,11 +52,7 @@ const SignInComponent = () => {
             <div className="container">
               <div className="row">
                 <div className="col-md-4">
-                  <img
-                    src="/signinrow2.jpg"
-                    alt=""
-                    className="responsive-img"
-                  />
+                  <img src="signinrow2.jpg" alt="" className="responsive-img" />
                 </div>
                 <div className="col-md-8">
                   <h2>Login Instructions</h2>

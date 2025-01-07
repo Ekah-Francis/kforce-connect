@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "../../CSS/SignInCSS/LoginComponent.css";
+import { Link } from "react-router-dom";
 
 const LoginComponent = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -34,7 +35,7 @@ const LoginComponent = () => {
       )}
       <div className="logincomponent-form-wrapper">
         <img
-          src="/update01.jpg"
+          src="update01.jpg"
           alt="Header Logo"
           className="logincomponent-header-image"
         />
@@ -76,12 +77,9 @@ const LoginComponent = () => {
             <label className="logincomponent-remember-me">
               <input type="checkbox" /> Remember me
             </label>
-            <a
-              href="/forgot-password"
-              className="logincomponent-forgot-password"
-            >
+            <Link to="/forget" className="logincomponent-forgot-password">
               Forgot Password?
-            </a>
+            </Link>
           </div>
         </form>
       </div>
