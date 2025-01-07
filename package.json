@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "ekah-francis.github.io/kforce-connect",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
