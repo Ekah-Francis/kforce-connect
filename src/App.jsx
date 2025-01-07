@@ -25,9 +25,8 @@ import ContactForm from "./components/LandingPageJSXs/ContactForm";
 function App() {
   return (
     <JobProvider>
-      {" "}
       {/* Wrap the application in the JobProvider */}
-      <BrowserRouter basename="/kforce-connect/">
+      <BrowserRouter basename="/kforce-connect">
         <Navbar />
         <ScrollToTop />
         <Routes>
@@ -43,7 +42,6 @@ function App() {
           />
           <Route path="/submit-resume" element={<SubmitResume />} />
           <Route path="/leaders" element={<LeaderLanding />} />
-
           <Route path="/about" element={<AboutLanding />} />
           <Route path="/login" element={<LoginComponent />} />
           <Route path="/sign-in" element={<SignInLanding />} />
