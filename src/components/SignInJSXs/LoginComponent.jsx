@@ -22,23 +22,23 @@ const LoginComponent = () => {
 
   return (
     <div className="logincomponent-container">
-      {error && (
-        <div className="logincomponent-error-banner">
-          <p>The username or password is incorrect.</p>
-          <button
-            className="logincomponent-dismiss-button"
-            onClick={dismissError}
-          >
-            &times;
-          </button>
-        </div>
-      )}
       <div className="logincomponent-form-wrapper">
         <img
           src="update01.jpg"
           alt="Header Logo"
           className="logincomponent-header-image"
         />
+        {error && (
+          <div className="logincomponent-error-banner">
+            <p>The username or password is incorrect.</p>
+            <button
+              className="logincomponent-dismiss-button"
+              onClick={dismissError}
+            >
+              &times;
+            </button>
+          </div>
+        )}
         <form className="logincomponent-form" onSubmit={handleLogin}>
           <div className="logincomponent-input-group">
             <label htmlFor="username">Username</label>
@@ -57,11 +57,11 @@ const LoginComponent = () => {
                 type={showPassword ? "text" : "password"}
                 id="password"
                 placeholder="Enter your password"
-                className={["logincomponent-input"]}
+                className="logincomponent-input"
                 required
               />
               <span
-                className={["logincomponent-eye-icon"]}
+                className="logincomponent-eye-icon"
                 onClick={togglePasswordVisibility}
               >
                 {showPassword ? "👁" : "🕶"}
@@ -75,7 +75,8 @@ const LoginComponent = () => {
           </div>
           <div className="logincomponent-options-group">
             <label className="logincomponent-remember-me">
-              <input type="checkbox" /> Remember me
+              <input type="checkbox" className="logincomponent-checkbox" />{" "}
+              Remember me
             </label>
             <Link to="/forget" className="logincomponent-forgot-password">
               Forgot Password?

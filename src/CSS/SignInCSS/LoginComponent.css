@@ -1,4 +1,3 @@
-/* LoginComponent.css */
 .logincomponent-container {
   display: flex;
   justify-content: center;
@@ -10,28 +9,27 @@
 }
 
 .logincomponent-error-banner {
-  position: absolute;
-  top: 0;
-  width: 100%;
   background-color: #ff4d4d;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
-  z-index: 1000;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 .logincomponent-error-banner p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .logincomponent-dismiss-button {
   background: none;
   border: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -41,20 +39,13 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px; /* Ensures the form doesn't exceed this width */
+  max-width: 400px;
 }
 
 .logincomponent-header-image {
   width: 100px;
   display: block;
   margin: 0 auto 1rem;
-}
-
-.logincomponent-title {
-  text-align: center;
-  margin: 0 0 1.5rem;
-  color: #333333;
-  font-size: 1.8rem;
 }
 
 .logincomponent-input-group {
@@ -125,6 +116,14 @@
 .logincomponent-remember-me {
   font-size: 0.9rem;
   color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.logincomponent-checkbox {
+  margin-right: 0.5rem;
+  accent-color: #007bff;
+  cursor: pointer;
 }
 
 .logincomponent-forgot-password {
@@ -143,10 +142,6 @@
     padding: 1.5rem;
   }
 
-  .logincomponent-title {
-    font-size: 1.5rem;
-  }
-
   .logincomponent-input {
     padding: 0.7rem;
   }
@@ -159,10 +154,6 @@
 @media (max-width: 480px) {
   .logincomponent-form-wrapper {
     padding: 1rem;
-  }
-
-  .logincomponent-title {
-    font-size: 1.2rem;
   }
 
   .logincomponent-header-image {

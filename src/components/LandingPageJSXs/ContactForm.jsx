@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 import "../../CSS/LandingPageCSS/ContactForm.css";
 
 const ContactForm = () => {
@@ -19,12 +20,22 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!formData.name || !formData.email || !formData.jobType) {
+      Swal.fire({
+        icon: "error",
+        title: "Validation Error",
+        text: "Please fill in all required fields!",
+      });
+      return;
+    }
+
     setLoading(true);
 
     window.Email.send({
-      SecureToken: "YOUR_SMTPJS_SECURE_TOKEN", // Replace with your SMTPJS token
-      To: "your-email@example.com", // Replace with your email
-      From: formData.email,
+      SecureToken: "3c8a6bc4-b91f-4790-ac44-355edcb4e7d4", // Replace with your SMTP token
+      To: "forrecivingcontact@gmail.com",
+      From: "forrecivingcontact@gmail.com",
       Subject: `Contact Form Submission from ${formData.name}`,
       Body: `
         <p><strong>Name:</strong> ${formData.name}</p>
@@ -33,21 +44,35 @@ const ContactForm = () => {
         <p><strong>Additional Information:</strong> ${formData.additionalInfo}</p>
       `,
     }).then((message) => {
-      alert(
-        message === "OK"
-          ? "Message sent successfully!"
-          : "Failed to send message."
-      );
       setLoading(false);
+      if (message === "OK") {
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent",
+          text: "Your message has been sent successfully!",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          jobType: "",
+          additionalInfo: "",
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Failed to send message. Please try again later.",
+        });
+      }
     });
   };
 
   return (
-    <div className="contact-form">
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">
-            Name: <span className="required">*</span>
+    <div className="contact-form-container-responsive">
+      <form onSubmit={handleSubmit} className="contact-form-stylish-wrapper">
+        <div className="form-group-wrapper">
+          <label htmlFor="name" className="form-label-stylish">
+            Name: <span className="required-indicator">*</span>
           </label>
           <input
             type="text"
@@ -55,13 +80,13 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            required
+            className="input-field-responsive"
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="email">
-            Email: <span className="required">*</span>
+        <div className="form-group-wrapper">
+          <label htmlFor="email" className="form-label-stylish">
+            Email: <span className="required-indicator">*</span>
           </label>
           <input
             type="email"
@@ -69,15 +94,15 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            required
+            className="input-field-responsive"
           />
         </div>
 
-        <div className="form-group">
-          <label>
-            Job Type: <span className="required">*</span>
+        <div className="form-group-wrapper">
+          <label className="form-label-stylish">
+            Job Type: <span className="required-indicator">*</span>
           </label>
-          <div>
+          <div className="radio-group-wrapper">
             <input
               type="radio"
               id="temporary"
@@ -87,9 +112,11 @@ const ContactForm = () => {
               onChange={handleChange}
               required
             />
-            <label htmlFor="temporary">Temporary/Contract/Project</label>
+            <label htmlFor="temporary" className="radio-label">
+              Temporary/Contract/Project
+            </label>
           </div>
-          <div>
+          <div className="radio-group-wrapper">
             <input
               type="radio"
               id="directHire"
@@ -99,22 +126,31 @@ const ContactForm = () => {
               onChange={handleChange}
               required
             />
-            <label htmlFor="directHire">Direct Hire</label>
+            <label htmlFor="directHire" className="radio-label">
+              Direct Hire
+            </label>
           </div>
         </div>
 
-        <div className="form-group">
-          <label htmlFor="additionalInfo">Additional Information:</label>
+        <div className="form-group-wrapper">
+          <label htmlFor="additionalInfo" className="form-label-stylish">
+            Additional Information:
+          </label>
           <textarea
             id="additionalInfo"
             name="additionalInfo"
             rows="4"
             value={formData.additionalInfo}
             onChange={handleChange}
+            className="textarea-responsive"
           ></textarea>
         </div>
 
-        <button type="submit" className="btn-submit" disabled={loading}>
+        <button
+          type="submit"
+          className="submit-button-responsive"
+          disabled={loading}
+        >
           {loading ? "Submitting..." : "Submit"}
         </button>
       </form>

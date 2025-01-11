@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "../../CSS/SignInCSS/SignInComponent.css";
+import { Link } from "react-router-dom";
 
 const SignInComponent = () => {
   return (
@@ -55,20 +56,14 @@ const SignInComponent = () => {
                   <img src="signinrow2.jpg" alt="" className="responsive-img" />
                 </div>
                 <div className="col-md-8">
-                  <h2>Login Instructions</h2>
+                  <h2>Login Instructions</h2> <br />
                   <p>
                     1. Go to{" "}
-                    <a
-                      rel="noopener noreferrer"
-                      href="/login"
-                      target="_blank"
-                      title="Login"
-                    >
+                    <Link to="/login" rel="noopener noreferrer" title="Login">
                       www.kforcegreatstart.estaff365.com
-                    </a>
+                    </Link>
                   </p>
                   <br />
-
                   <p>2. Click "Forgot Password?"</p>
                   <br />
                   <p> 3. Enter your email and click "Reset Password".</p>
@@ -78,14 +73,9 @@ const SignInComponent = () => {
                     4. Check your email for a password reset email and follow
                     the instructions.
                   </p>
-                  <a
-                    rel="noopener noreferrer"
-                    href="/login"
-                    target="_blank"
-                    className="btn"
-                  >
+                  <Link to="/login" rel="noopener noreferrer" className="btn">
                     Log In Today
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -93,8 +83,19 @@ const SignInComponent = () => {
           <footer className="footer">
             <div className="container text-center">
               <p>
-                Questions about the log in process? Contact the Customer
-                Solutions Center at 888.435.7957.
+                Questions about the login process? Contact the Customer
+                Solutions Center at
+                <a
+                  style={{
+                    textDecoration: "underline",
+                    marginLeft: "5px",
+                    color: "white",
+                  }}
+                  href="mailto:forrecivingcontact@gmail.com"
+                >
+                  info@kforcereg.com
+                </a>
+                .
               </p>
             </div>
           </footer>

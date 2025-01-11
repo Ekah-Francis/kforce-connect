@@ -18,6 +18,7 @@ import TalentSolutionLanding from "./components/Solutions/TalentSolutionLanding"
 import AboutLanding from "./components/AboutJSXs/AboutLanding";
 import LeaderLanding from "./components/AboutJSXs/LeaderLanding";
 import SignInLanding from "./components/SignInJSXs/SignInLanding";
+import ForgetPassword from "./components/SignInJSXs/ForgetPassword";
 import LoginComponent from "./components/SignInJSXs/LoginComponent";
 import ScrollToTop from "../ScrollToTop";
 import ContactForm from "./components/LandingPageJSXs/ContactForm";
@@ -47,6 +48,7 @@ function App() {
           <Route path="/sign-in" element={<SignInLanding />} />
           <Route path="/job/:id" element={<JobDetails jobs={jobs} />} />
           <Route path="/contact" element={<ContactForm />} />
+          <Route path="/forget" element={<ForgetPassword />} />
         </Routes>
         <Footer />
       </BrowserRouter>
