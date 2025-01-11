@@ -27,7 +27,7 @@ function App() {
   return (
     <JobProvider>
       {/* Wrap the application in the JobProvider */}
-      <BrowserRouter basename="/kforce-connect">
+      <BrowserRouter basename="/">
         <Navbar />
         <ScrollToTop />
         <Routes>

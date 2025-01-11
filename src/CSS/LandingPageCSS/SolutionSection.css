@@ -236,10 +236,6 @@ a {
   padding: 10px 0px 5px 0px;
 }
 
-.BigDiv_SolutionSectionMacro .div_mobileView .btnOfAccordion.collapsed img {
-  content: url("/Css/images/Icons_dropdown.png") !important;
-}
-
 .BigDiv_SolutionSectionMacro .div_mobileView .ddlEven2 {
   border-top: 1px solid black;
   margin-top: 0px;
