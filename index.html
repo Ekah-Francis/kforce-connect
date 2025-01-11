@@ -5,19 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="manifest" href="/kforce-connect/site.webmanifest" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/kforce-connect/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/kforce-connect/favicon-16x16.png"
-    />
+    <!-- Update the path to root (no /kforce-connect) -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
@@ -25,6 +16,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="src/main.jsx"></script>
+    <!-- Make sure the script path is relative to the root -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
