@@ -33,7 +33,6 @@ const LeaderComponent = () => {
       position: "CFO",
       image: "/michael-blackman-headshot.jpeg",
     },
-    { name: "Alice Johnson", position: "CFO", image: "/denis-edwardsg.jpeg" },
     // Add 10 more leaders here
   ];
 

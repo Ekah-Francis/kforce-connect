@@ -20,6 +20,21 @@
   height: 100%;
   object-fit: cover;
   z-index: -2;
+  display: block;
+  filter: brightness(0.4); /* Darken the image */
+}
+
+/* Image Background */
+.image-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  display: none; /* Hide image by default */
+  filter: brightness(0.4); /* Darken the image */
 }
 
 /* Gradient Overlay */
@@ -83,29 +98,22 @@ p a.btn-filled:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 968px) {
-  .hero-section {
-    height: 70vh;
+@media (max-width: 768px) {
+  .video-element {
+    display: none; /* Hide video on smaller screens */
   }
+
+  .image-element {
+    display: block; /* Show image on smaller screens */
+  }
+
   .content-container span {
     font-size: 3rem;
   }
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    height: 80vh;
-  }
-  .content-container span {
-    font-size: 2.5rem;
-  }
-}
-
 @media (max-width: 480px) {
-  .hero-section {
-    height: 80vh;
-  }
   .content-container span {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }

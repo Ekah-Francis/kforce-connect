@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="logo-content">
             <Link to="/">
               <img
-                src="https://kforcewebeast.azureedge.net/media/407208/kforce_sm_white_1000px.png"
+                src="kforce_sm_white_1000px.png"
                 alt="Kforce logo"
                 className="footer-logo"
               />
@@ -140,9 +140,9 @@ const Footer = () => {
           Opportunity/Affirmative Action Employer.
         </p>
         <div className="footer-socials">
-          <Link to="/signin" className="sign-in">
+          <a href="/" className="sign-in">
             <FaLinkedinIn className="footer-social-icons" />
-          </Link>
+          </a>
         </div>
         <p className="last">
           <Link
@@ -180,8 +180,11 @@ const Footer = () => {
           >
             Privacy Rights
           </Link>
-          &nbsp;|&nbsp;
-          <Link to="https://health.aetna.com/" rel="noopener noreferrer">
+          <Link
+            to="https://health.aetna.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Transparency in Coverage
           </Link>
         </p>

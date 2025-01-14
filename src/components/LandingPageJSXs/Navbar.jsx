@@ -85,9 +85,9 @@ const Navbar = () => {
               SIGN IN
             </Link>
             <div className="socials">
-              <Link to="/signin" className="sign-in">
+              <a href="/" className="sign-in">
                 <FaLinkedinIn className="social-icons" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

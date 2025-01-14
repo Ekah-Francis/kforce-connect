@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <div className="hero-section">
-      {/* Video Background */}
+      {/* Video Background (for large screens) */}
       <video
         autoPlay
         loop
@@ -18,6 +18,13 @@ const HeroSection = () => {
       >
         Your browser does not support the video tag.
       </video>
+
+      {/* Image Background (for smaller screens) */}
+      <img
+        src="projecthead.png" /* Replace with your image path */
+        alt="Hero Background"
+        className="image-element"
+      />
 
       {/* Gradient Overlay */}
       <div className="hero-video-gradient"></div>
